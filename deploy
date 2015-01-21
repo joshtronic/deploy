@@ -1,0 +1,2 @@
+#!/bin/zsh
+ssh aurora "cd /var/www/$1; git rev-parse --abbrev-ref HEAD | xargs git pull origin"
